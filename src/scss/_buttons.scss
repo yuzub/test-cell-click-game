@@ -1,0 +1,21 @@
+.btn-stroked {
+  background-color: var(--bg-color);
+  border: 0.1rem solid var(--cell-color);
+  color: var(--cell-color);
+  padding: 0.5rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--cell-color);
+    color: var(--bg-color);
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+}

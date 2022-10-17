@@ -1,0 +1,65 @@
+:host {
+  --cell-size: 3rem;
+  --cell-color: #0000ff;
+  --bg-color: #fff;
+}
+
+.container {
+  max-width: 35rem;
+  margin: 1rem auto;
+  border: 0.1rem solid var(--cell-color);
+  overflow: hidden;
+}
+
+.header {
+  color: var(--bg-color);
+  background-color: var(--cell-color);
+  text-align: center;
+  padding: 1rem;
+}
+
+.control-row {
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+  margin: 2rem 1rem;
+
+  label {
+    margin-left: auto;
+  }
+
+  input[type="number"] {
+    width: 10rem;
+    padding: 0.5rem 0.7rem;
+    box-sizing: border-box;
+    border: 0.1rem solid var(--cell-color);
+    border-radius: 0;
+
+    &.ng-invalid {
+      border-color: #ff0000;
+    }
+  }
+
+  p {
+    margin: 1rem auto;
+  }
+}
+
+.help-message {
+  height: 2rem;
+  text-align: center;
+  color: var(--cell-color);
+}
+
+.game-grid {
+  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+
+  .cell {
+    width: var(--cell-size);
+    height: var(--cell-size);
+    background-color: var(--cell-color);
+  }
+}
